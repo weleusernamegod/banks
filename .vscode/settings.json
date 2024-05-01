@@ -1,0 +1,24 @@
+{
+    "emulicious-debugger.emuliciousPath": "/Applications/Emulicious/",
+    "files.associations": {
+        "inventory.h": "c",
+        "globals.h": "c",
+        "attributes.h": "c",
+        "shop.h": "c",
+        "constants.h": "c",
+        "gb.h": "c",
+        "progressbar.h": "c",
+        "nav.h": "c",
+        "player.h": "c",
+        "rover.h": "c",
+        "splashscreen.h": "c",
+        "cgb.h": "c",
+        "tile.h": "c",
+        "stdint.h": "c",
+        "gameloop.h": "c",
+        "stdio.h": "c",
+        "metasprites.h": "c",
+        "platform.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "/usr/local/opt/gbdk/bin/lcc",
+}
