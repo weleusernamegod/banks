@@ -16,7 +16,7 @@ BINS	    = $(OBJDIR)/$(PROJECTNAME).$(EXT)
 CSOURCES    = $(foreach dir,$(SRCDIR),$(notdir $(wildcard $(dir)/*.c)))
 OBJS        = $(CSOURCES:%.c=$(OBJDIR)/%.o) $(ASMSOURCES:%.s=$(OBJDIR)/%.o)
 
-all:	clean prepare $(BINS)
+all:	clean prepare $(BINS) copy-rom
 
 # Compile .c files in "src/" to .o object files
 $(OBJDIR)/%.o:	$(SRCDIR)/%.c
@@ -31,5 +31,8 @@ prepare:
 
 clean:
 	rm -f  $(OBJDIR)/*.* $(BINDIR)/*.*
+
+copy-rom:
+	cp $(BINDIR)/$(PROJECTNAME).gb .
 
 $(info $(shell mkdir -p $(MKDIRS)))
