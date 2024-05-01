@@ -11,9 +11,9 @@ void main(void) {
 
   var_internal = 1;
   SWITCH_RAM(0);
-  for (uint8_t i = 0; i < 128; i++) array_0[i] = i;
+  for (uint16_t i = 0; i < 128; i++) array_0[i] = i;
   SWITCH_RAM(1);
-  for (uint8_t i = 0; i < 128; i++) array_1[i] = i;
+  for (uint16_t i = 0; i < 128; i++) array_1[i] = i;
 
   puts("Program Start...");
   printf("Var is %u\n", var_internal);
